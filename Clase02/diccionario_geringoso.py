@@ -1,10 +1,12 @@
 # geringoso.py
 # Archivo de ejemplo
 # Ejercicio de geringoso
-
-cadena = "Geringoso"
+diccionariogeringoso = {}
+cadena = ""
 cadenageringoso = ""
-for c in cadena:  
+lista = ('banana', 'manzana', 'mandarina')
+for cadena in lista:
+ for c in cadena:  
   if c == "e" :
    c = c.replace( c,c+"pe")
    cadenageringoso = cadenageringoso + c
@@ -22,6 +24,6 @@ for c in cadena:
    cadenageringoso = cadenageringoso + c
   else:
    cadenageringoso = cadenageringoso + c
- 
-print(cadena)
-print(cadenageringoso)
+ diccionariogeringoso[cadena] = cadenageringoso
+ cadenageringoso = ""
+print(diccionariogeringoso)
