@@ -17,8 +17,6 @@ def buscar_precio(fruta):
                 precio_fruta = float(row[2].strip('\n')) 
                 print('El precio de un cajon de', fruta, 'es:', str(precio_fruta) ) 
                 return            
-    print(fruta, 'no figura en el listado de precios.' ) 
-
-    
+    print(fruta, 'no figura en el listado de precios.' )     
 
 buscar_precio("Lima")
