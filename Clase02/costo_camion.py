@@ -12,8 +12,7 @@ def costo_camion(nombre_archivo):
     f = open(nombre_archivo)
     rows = csv.reader(f)
     headers = next(rows)        
-    for row in rows:            
-       
+    for row in rows:                   
         precio_cajon = (float(row[2].strip('\n'))) 
         cant_cajones = (float(row[1])) 
         precio_total = precio_total + (precio_cajon * cant_cajones)
